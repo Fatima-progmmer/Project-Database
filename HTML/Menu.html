@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pizza Menu - With Images</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../CSS/Menu.CSS">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container justify-content-center">
+            <a class="navbar-brand me-4" href="#"><img src="../Assests/logo.png" alt="LOGO"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Reservation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="cart-icon-wrapper">
+                            <a class="nav-link position-relative" href="#" id="cartIcon">
+                                <i class="fa-solid fa-cart-shopping fa-2x"></i>
+                                <span class="cart-badge" id="cartCount">0</span>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+   <menu>
+    <div class="container" id="main-cards">
+        <h2 class="text-center mb-4">🍕Menu</h2>
+        <div class="row row-cols-1 row-cols-md-4 g-4" id="pizzaMenu">
+        </div>
+    
+    <div class="below-section mx-auto" 
+    style="background-image: url('Assests/Picture3.png'); background-size: cover; 
+    background-repeat: no-repeat; background-position: center; padding: 40px;">
+        <div class="text-white">
+            <h3>Order Now !</h3>
+                <button class="btns order-btn text-white mx-auto d-block" type="button">
+                    <i class="fa-solid fa-phone"></i> Call Now
+                </button>
+        </div>
+        <img src="../Assests/Order Now.png" alt="">
+    </div>
+
+    <div id="fullCart" class="position-fixed top-0 end-0 bg-white shadow p-4 z-3">
+        <h5 class="mb-3">🛒 Your Cart</h5>
+        <div id="fullCartItems"></div>
+        <div class="mt-3">
+            <strong>Total:</strong> Rs. <span id="fullTotalPrice">0</span>
+        </div>
+        <button class="btn btn-success mt-3 w-100">Proceed to Checkout</button>
+    </div>
+
+   </menu>
+
+    <footer class="footer text-center" 
+    style="background-image: url('../Assests/Picture2.png'); background-size: cover; 
+                  background-repeat: no-repeat; background-position: center; padding: 40px;">
+        <div class="container py-4">
+            <div class="row justify-content-center">
+                <div class="col-auto">
+                    <a href="#" class="footer-link">OUR MENU</a>
+                    <a href="#" class="footer-link">Reservation</a>
+                    <a href="#" class="footer-link">Reviews</a>
+                    <a href="#" class="footer-link">Franchise</a>
+                    <a href="#" class="footer-link">Contact Us</a>
+                    <a href="#" class="footer-link">Blog</a>
+                </div>
+            </div>
+    
+            <div class="row mt-3">
+                <div class="col">
+                    <p class="email-text">
+                        Tell us how we're doing:
+                        <a href="mailto:Owners@crustpizzaco.com" class="email-link">Owners@crustpizzaco.com</a>
+                    </p>
+                    <div class="social-icons mt-2">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#"><i class="fa-brands fa-square-snapchat"></i></a>
+                    </div>
+                    <p class="description mt-3">
+                        Crust pizza is a locally-owned place for delicious, made-from-scratch pizzas served in an
+                        upscale,<br>
+                        comfortable, family-friendly environment.
+                    </p>
+                    <p class="copyright mt-2">&copy; 2019 CRUST PIZZA CO.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../JS/menu.js"></script>
+
+</body>
+
+</html>
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en"> -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pizza Menu - With Cart</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .cart-badge {
+            position: absolute;
+            top: 0;
+            right: -10px;
+            background-color: red;
+            color: white;
+            border-radius: 50%;
+            padding: 2px 6px;
+            font-size: 12px;
+        }
+
+        .cart-icon-wrapper {
+            position: relative;
+        }
+
+        .quantity-btn {
+            background-color: #ccc;
+            border: none;
+            padding: 2px 6px;
+            margin: 0 2px;
+        }
+
+        .remove-btn {
+            color: red;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+
+        #fullCart {
+            width: 350px;
+            height: 100vh;
+            overflow-y: auto;
+            display: none;
+        }
+
+        @media (max-width: 576px) {
+            #fullCart {
+                width: 100vw;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container justify-content-between">
+            <a class="navbar-brand me-4" href="#"><img src="../Assests/logo.png" alt="LOGO"></a>
+            <div class="cart-icon-wrapper">
+                <a class="nav-link position-relative" href="#" id="cartIcon">
+                    <i class="fa-solid fa-cart-shopping fa-2x"></i>
+                    <span class="cart-badge" id="cartCount">0</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container" id="main-cards">
+        <h2 class="text-center mb-4">🍕Menu</h2>
+        <div class="row row-cols-1 row-cols-md-4 g-4" id="pizzaMenu"></div>
+    </div>
+
+    <div id="fullCart" class="position-fixed top-0 end-0 bg-white shadow p-4 z-3">
+        <h5 class="mb-3">🛒 Your Cart</h5>
+        <div id="fullCartItems"></div>
+        <div class="mt-3">
+            <strong>Total:</strong> Rs. <span id="fullTotalPrice">0</span>
+        </div>
+        <button class="btn btn-success mt-3 w-100">Proceed to Checkout</button>
+    </div>
+
+    <script>
+        const pizzas = [
+            { name: "Chicken Fajita", desc: "Grilled chicken, capsicum, onions, and fajita seasoning.", img: "../Assests/Card1.png" },
+            { name: "Fajita Sicilian", desc: "Spicy chicken, black olives, capsicum, onions, and herbs.", img: "../Assests/Card2.png" },
+            { name: "Cheese Lover", desc: "Mozzarella, cheddar, parmesan, and creamy cheese sauce.", img: "../Assests/Card3.png" },
+            { name: "Peri Peri", desc: "Peri peri chicken, red onions, capsicum, and tangy sauce.", img: "../Assests/Card4.png" }
+        ];
+
+        const prices = { Small: 445, Medium: 675, Large: 895 };
+
+        let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+        const menuContainer = document.getElementById("pizzaMenu");
+        const cartCount = document.getElementById("cartCount");
+        const fullCart = document.getElementById("fullCart");
+
+        function renderMenu() {
+            pizzas.forEach(pizza => {
+                const col = document.createElement("div");
+                col.className = "col";
+                col.innerHTML = `
+                    <div class="card h-100 shadow-sm">
+                        <img src="${pizza.img}" class="card-img-top" alt="${pizza.name}">
+                        <div class="card-body">
+                            <h5 class="card-title">${pizza.name}</h5>
+                            <p class="card-text">${pizza.desc}</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <select class="form-select form-select-sm w-50 size-select">
+                                    <option value="Small">Small - Rs. 445</option>
+                                    <option value="Medium">Medium - Rs. 675</option>
+                                    <option value="Large">Large - Rs. 895</option>
+                                </select>
+                                <button class="btn btn-danger btn-sm add-btn">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                col.querySelector(".add-btn").addEventListener("click", () => {
+                    const size = col.querySelector(".size-select").value;
+                    addToCart(pizza.name, size);
+                });
+
+                menuContainer.appendChild(col);
+            });
+        }
+
+        function addToCart(name, size) {
+            const index = cart.findIndex(item => item.name === name && item.size === size);
+            if (index !== -1) {
+                cart[index].qty += 1;
+            } else {
+                cart.push({ name, size, qty: 1 });
+            }
+            saveCart();
+            updateCartDisplay();
+        }
+
+        function saveCart() {
+            localStorage.setItem("cart", JSON.stringify(cart));
+        }
+
+        function updateCartDisplay() {
+            cartCount.textContent = cart.reduce((acc, item) => acc + item.qty, 0);
+            renderFullCart();
+        }
+
+        function renderFullCart() {
+            const fullCartItems = document.getElementById("fullCartItems");
+            const fullTotalPrice = document.getElementById("fullTotalPrice");
+
+            fullCartItems.innerHTML = "";
+            let total = 0;
+
+            cart.forEach((item, i) => {
+                const price = prices[item.size];
+                const subtotal = price * item.qty;
+                total += subtotal;
+
+                const div = document.createElement("div");
+                div.className = "d-flex justify-content-between align-items-center mb-2 border-bottom pb-2";
+                div.innerHTML = `
+                    <div>
+                        <strong>${item.name}</strong><br>
+                        <small>${item.size} - Rs. ${price} x ${item.qty} = Rs. ${subtotal}</small>
+                    </div>
+                    <div>
+                        <button class="quantity-btn" onclick="decreaseQty(${i})">−</button>
+                        <button class="quantity-btn" onclick="increaseQty(${i})">+</button>
+                        <span class="remove-btn" onclick="removeItem(${i})">&times;</span>
+                    </div>
+                `;
+                fullCartItems.appendChild(div);
+            });
+
+            fullTotalPrice.textContent = total;
+        }
+
+        function increaseQty(index) {
+            cart[index].qty += 1;
+            saveCart();
+            updateCartDisplay();
+        }
+
+        function decreaseQty(index) {
+            if (cart[index].qty > 1) {
+                cart[index].qty -= 1;
+            } else {
+                cart.splice(index, 1);
+            }
+            saveCart();
+            updateCartDisplay();
+        }
+
+        function removeItem(index) {
+            cart.splice(index, 1);
+            saveCart();
+            updateCartDisplay();
+        }
+
+        document.getElementById("cartIcon").addEventListener("click", (e) => {
+            e.preventDefault();
+            fullCart.style.display = fullCart.style.display === "block" ? "none" : "block";
+            renderFullCart();
+        });
+
+        renderMenu();
+        updateCartDisplay();
+    </script>
+</body>
+
+</html>-->

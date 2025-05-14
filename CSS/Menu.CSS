@@ -1,0 +1,191 @@
+body {
+    background-color: #fff8f0;
+    padding: 30px;
+}
+
+#main-cards{
+    padding-top: 80px;
+}
+
+.card-img-top {
+    height: 120px;
+    width: 120px;
+    object-fit: cover;
+}
+
+.card {
+    transition: transform 0.2s ease;
+    min-height: 70%;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.cart-item {
+    padding: 10px 0;
+}
+
+.btn:hover{
+    background-color: #bc1919;
+}
+.cart-total {
+    font-weight: bold;
+    font-size: 18px;
+    color: #d62828;
+}
+
+.quantity-btn {
+    padding: 0 10px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    background: none;
+    color: #d62828;
+}
+
+.quantity-btn:hover {
+    color: #d62828;
+    cursor: pointer;
+}
+
+h2,
+h4 {
+    color: #d62828;
+}
+
+
+.navbar {
+    background-color: #fff !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1030;
+    width: 100%;
+}
+
+.navbar .nav-link {
+    color: #000000 !important;
+    margin: 0 10px;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-link.active,
+.navbar .nav-link:hover {
+    color: #d34203 !important;
+    font-weight: bolder;
+}
+
+.navbar-brand img {
+    height: 80px;
+    width: auto;
+    max-width: 150px;
+}
+
+nav form,
+.menu-detail button {
+    background-color: #EF6B33;
+    border-radius: 20px;
+
+}
+
+nav .collapse i:hover {
+    color: #d34203;
+}
+
+
+.footer {
+    background-color: #fff;
+    color: #333;
+    border-top: 1px solid #eee;
+}
+
+.footer-link {
+    margin: 0 10px;
+    color: #000;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+    color: #C0392B;
+}
+
+.email-text {
+    font-size: 14px;
+    color: #333;
+}
+
+.email-link {
+    color: #f26522;
+    font-weight: bold;
+}
+
+.social-icons a {
+    color: #333;
+    transition: color 0.3s ease;
+    padding: 10px;
+    font-size: large;
+}
+
+.social-icons a:hover {
+    color: #f26522;
+}
+
+.description {
+    font-size: 13px;
+    color: #666;
+}
+
+.copyright {
+    font-size: 13px;
+    color: #999;
+    margin-bottom: -50px;
+}
+
+menu .below-section{
+    background-color: #bc1919;
+    border-radius: 15px;
+    width: 700px;
+}
+
+.btns{
+    background-color: #000;
+    border-radius: 5px;
+    transition: ease-in-out;
+}
+
+.btns:hover{
+    background-color: #eee;
+    color: #000 !important;
+}
+
+.below-section img{
+    width: 500px;
+    height: 300px;
+}
+
+.text-white {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.text-white h2 {
+    margin: 0;
+}
+
+.text-white button {
+    padding: 8px 25px;
+}
+
+#fullCart{
+    padding-top: 400px;
+}

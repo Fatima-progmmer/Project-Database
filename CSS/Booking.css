@@ -1,0 +1,121 @@
+body {
+        background-image: url('../Assests/IMG-20250502-WA0018.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        color: #fff;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+        .navbar {
+            background-color: #fff !important;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1030;
+            width: 100%;
+        }
+    
+        .navbar .nav-link {
+            color: #000000 !important;
+            margin: 0 10px;
+            text-transform: uppercase;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+    
+        .navbar .nav-link.active,
+        .navbar .nav-link:hover {
+            color: #d34203 !important;
+            font-weight: bolder;
+        }
+    
+        .navbar-brand img {
+            height: 80px;
+            width: auto;
+            max-width: 150px;
+        }
+    
+        nav form,
+        .menu-detail button {
+        background: linear-gradient(135deg, #ee0979, #ff6a00);
+            border-radius: 20px;
+    
+        }
+    
+        nav form:hover,
+        .menu-detail button:hover {
+            background: linear-gradient(135deg, #ff6a00,#ee0979);
+        }
+    
+        nav .collapse i:hover {
+            color: #d34203;
+        }
+
+.bookingForm {
+        padding: 30px;
+        border-radius: 15px;
+        max-width: 500px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .booking-container form{
+        background: gray;
+        padding: 30px;
+        border-radius: 15px;
+    }
+
+.booking-container h3{
+    font-size: 4rem;
+    font-weight: 500;
+    padding-top: 100px;
+    color: #d34203;
+}
+
+    .step,
+    #thankYouScreen,
+    #finalMessage {
+        display: none;
+    }
+
+    .step.active,
+    #thankYouScreen.active {
+        display: block;
+    }
+
+    .form-control,
+    .form-select {
+        background-color: rgba(255, 255, 255, 0.9);
+        color: #000;
+    }
+
+    .btn-primary {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    #thankYouScreen,
+    #finalMessage {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    #step1{
+        width: 400px;
+    }
+
+    button{
+        background: linear-gradient(135deg, #ee0979, #ff6a00) !important;
+        color: white !important;
+    }
+
+    button:hover{
+        background: linear-gradient(135deg, #ff6a00 ,
+            #ee0979)  !important ;
+    }

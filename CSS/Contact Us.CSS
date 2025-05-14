@@ -1,0 +1,293 @@
+.body{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.navbar {
+    background-color: #fff !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1030;
+    width: 100%;
+}
+
+.navbar .nav-link {
+    color: #000000 !important;
+    margin: 0 10px;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-link.active,
+.navbar .nav-link:hover {
+    color: #d34203 !important;
+    font-weight: bolder;
+}
+
+.navbar-brand img {
+    height: 80px;
+    width: auto;
+    max-width: 150px;
+}
+
+nav form,
+.menu-detail button {
+    background-color: #EF6B33;
+    border-radius: 20px;
+
+}
+
+nav form:hover,
+.menu-detail button:hover {
+    background-color: #d34203;
+}
+
+nav .collapse i:hover {
+    color: #d34203;
+}
+
+.btn {
+    background: linear-gradient(135deg, #ff6a00, #ee0979);
+    border-radius: 50px;
+}
+
+.btn:hover{
+    background: linear-gradient(135deg, #ee0979, #ff6a00);
+    box-shadow: 0 6px 20px rgba(238, 9, 121, 0.5);
+    transform: translateY(-2px);
+
+}
+.contact-section {
+    background-color: #f8e9d6;
+}
+
+.contact-title {
+    color: #3c1d0b;
+    font-weight: bold;
+}
+
+.form-label {
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.form-control-sm {
+    font-size: 0.9rem;
+}
+
+/* Form Styles */
+.submit-btn {
+    background-color: #e25c32;
+    color: white;
+    padding: 0.5rem 2rem;
+    font-weight: bold;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.submit-btn:hover {
+    background-color: #c14d2d;
+}
+
+/* Image Column */
+.contact-image {
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+/* Contact Info Styles */
+.bi {
+    color: #e25c32;
+}
+
+.row.text-center .col-md-4 {
+    padding: 2rem 0;
+}
+
+h6.fw-bold {
+    color: #3c1d0b;
+}
+
+p.mb-0 {
+    color: #6c757d;
+}
+
+.footer {
+    background-color: #fff;
+    color: #333;
+    border-top: 1px solid #eee;
+}
+
+.footer-link {
+    margin: 0 10px;
+    color: #000;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+    color: #C0392B;
+}
+
+.email-text {
+    font-size: 14px;
+    color: #333;
+}
+
+.email-link {
+    color: #f26522;
+    font-weight: bold;
+}
+
+.social-icons a {
+    color: #333;
+    transition: color 0.3s ease;
+    padding: 10px;
+    font-size: large;
+}
+
+.social-icons a:hover {
+    color: #f26522;
+}
+
+.description {
+    font-size: 13px;
+    color: #666;
+}
+
+.copyright {
+    font-size: 13px;
+    color: #999;
+    margin-bottom: -50px;
+}
+
+.contact-section h2{
+    padding-top: 70px;
+}
+
+@media (max-width: 768px) {
+    .contact-image {
+        max-height: 250px;
+    }
+}
+
+/* General Form Styling */
+.contact-form-container {
+    background-color: #f8f8f8;
+    /* Soft background for the form */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.contact-form-container:hover {
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.form-label {
+    font-size: 1rem;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.form-control-sm {
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.form-control-sm:focus {
+    border-color: #e25c32;
+    box-shadow: 0 0 5px rgba(226, 92, 50, 0.5);
+}
+
+.submit-btn {
+    background-color: #e25c32;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.submit-btn:hover {
+    background-color: #d24f2f;
+    cursor: pointer;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+@media (max-width: 768px) {
+    .contact-form-container {
+        padding: 20px;
+    }
+
+    .contact-image {
+        max-height: 250px;
+    }
+
+    .form-control-sm {
+        font-size: 0.9rem;
+    }
+
+    .submit-btn {
+        width: 100%;
+        font-size: 1rem;
+    }
+}
+
+.bigburger-banner {
+    background-color: #f8f9fa;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),
+        url('https://images.unsplash.com/photo-1586190848861-99aa4a171e90?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.bigburger-banner h1 {
+    color: #e63946;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.bigburger-banner .btn-primary {
+    background-color: #e63946;
+    border: none;
+    padding: 10px 25px;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.bigburger-banner .btn-primary:hover {
+    background-color: #c1121f;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.locations-container {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.locations-container h4 {
+    color: #e63946;
+    font-weight: bold;
+}
